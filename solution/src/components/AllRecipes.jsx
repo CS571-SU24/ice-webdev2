@@ -26,8 +26,8 @@ export default function AllRecipes(props) {
         <Container fluid>
             <Row>
                 {
-                    recipes.slice(((page) - 1) * 3, page * 3).map(r => <Col xs={12} xl={4}>
-                        <Recipe {...r} key={r.name} />
+                    recipes.slice(((page) - 1) * 3, page * 3).map(r => <Col xs={12} xl={4} key={r.name}>
+                        <Recipe {...r} />
                     </Col>)
                 }
             </Row>
